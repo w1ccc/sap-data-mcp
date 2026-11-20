@@ -1,0 +1,66 @@
+{
+  "ZDEMO_REPORT": {
+    "transaction": "ZDEMO1",
+    "title": "Demo consumption summary",
+    "reviewed_on": "2026-11-18",
+    "source_last_changed": "2026-11-17",
+    "source_objects": [
+      "ZDEMO_REPORT%",
+      "LZFG_DEMO%"
+    ],
+    "parameters": {
+      "P_WERKS": {
+        "kind": "P",
+        "required": true
+      },
+      "P_MONTH": {
+        "kind": "P",
+        "required": true
+      },
+      "S_MATNR": {
+        "kind": "S",
+        "material": true
+      },
+      "P_MOVED": {
+        "kind": "P"
+      }
+    },
+    "note": "Example entry. Replace with your own reviewed display-only reports. Record what the report reads and any output limits (lists are cut at 256 characters)."
+  },
+  "ZDEMO_BOM": {
+    "transaction": "ZDEMO2",
+    "title": "Demo flat BOM display",
+    "reviewed_on": "2026-11-11",
+    "source_last_changed": "2026-06-26",
+    "source_objects": [
+      "ZDEMO_BOM%"
+    ],
+    "parameters": {
+      "P_WERKS": {
+        "kind": "P",
+        "required": true
+      },
+      "S_MTNRV": {
+        "kind": "S",
+        "material": true,
+        "required": true
+      },
+      "P_DATUV": {
+        "kind": "P"
+      },
+      "P_CAPID": {
+        "kind": "P"
+      },
+      "P_EMENG": {
+        "kind": "P"
+      },
+      "P_MEHRS": {
+        "kind": "P"
+      },
+      "P_STLAL": {
+        "kind": "P"
+      }
+    },
+    "note": "Example entry. Selects only; calls CS_BOM_EXPL_MAT_V2. P_DATUV is YYYYMMDD."
+  }
+}

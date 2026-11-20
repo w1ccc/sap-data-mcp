@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv*/
+
+# Local configuration and secrets
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+*.p12
+*.pfx
+*credentials*
+*password*
+*secret*
+
+# Logs (keep each provider's field description next to its audit logs)
+*.log
+**/logs/*
+!**/logs/README.md
+
+# Local SAP system settings and certificates
+private_cloud/rfc/config/SAP_SYSTEM_INFO
+private_cloud/rfc/config/systems/
+**/config/certs/
+*.crt

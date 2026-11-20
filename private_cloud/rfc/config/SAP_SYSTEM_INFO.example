@@ -1,0 +1,9 @@
+# Copy this file to SAP_SYSTEM_INFO and replace the placeholders.
+System Name: <SYSTEM_NAME>
+Environment: <DEV|QAS|PRD>
+System ID: <SYSTEM_ID>
+Application Server: <HOSTNAME_OR_IP>
+System Number: <SYSTEM_NUMBER>
+Client: <CLIENT>
+Language: EN
+Connection Type: RFC
