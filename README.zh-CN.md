@@ -75,7 +75,7 @@ py -3.12 -m venv .venv
 
 | 服务 | 配置 |
 |---|---|
-| RFC | 把 `private_cloud/rfc/.env.example` 复制为 `.env`（`SAP_USERNAME`、`SAP_PASSWORD`），把 `config/SAP_SYSTEM_INFO.example` 复制为 `config/SAP_SYSTEM_INFO`（应用服务器、系统编号、集团）。 |
+| RFC | 在 `private_cloud/rfc/` 里，把 `.env.example` 复制为 `.env`（`SAP_USERNAME`、`SAP_PASSWORD`），把 `config/SAP_SYSTEM_INFO.example` 复制为 `config/SAP_SYSTEM_INFO`（应用服务器、系统编号、集团）。 |
 | 私有 OData 或公有云 API | 把根目录的 `.env.example` 复制为 `private_cloud/odata/.env` 或 `public_cloud/api/.env`。填写 `SAP_API_BASE_URL`，再选 Basic 认证（`SAP_API_USERNAME`、`SAP_API_PASSWORD`）或 OAuth 客户端凭证（`SAP_API_AUTH=oauth`、`SAP_API_TOKEN_URL`、`SAP_API_CLIENT_ID`、`SAP_API_CLIENT_SECRET`）。 |
 
 **3. 注册**到 MCP 客户端。每个服务都从自己 `server.py` 所在的目录读取 `.env`、`config/` 和 `logs/`，客户端只要写绝对路径即可：

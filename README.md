@@ -75,7 +75,7 @@ py -3.12 -m venv .venv
 
 | Server | Configuration |
 |---|---|
-| RFC | Copy `private_cloud/rfc/.env.example` to `.env` (`SAP_USERNAME`, `SAP_PASSWORD`) and `config/SAP_SYSTEM_INFO.example` to `config/SAP_SYSTEM_INFO` (application server, system number, client). |
+| RFC | In `private_cloud/rfc/`, copy `.env.example` to `.env` (`SAP_USERNAME`, `SAP_PASSWORD`) and `config/SAP_SYSTEM_INFO.example` to `config/SAP_SYSTEM_INFO` (application server, system number, client). |
 | Private OData or Public API | Copy the root `.env.example` to `private_cloud/odata/.env` or `public_cloud/api/.env`. Set `SAP_API_BASE_URL`, then either Basic authentication (`SAP_API_USERNAME`, `SAP_API_PASSWORD`) or OAuth client credentials (`SAP_API_AUTH=oauth`, `SAP_API_TOKEN_URL`, `SAP_API_CLIENT_ID`, `SAP_API_CLIENT_SECRET`). |
 
 **3. Register** the servers with your MCP client. Each server finds its `.env`, `config/` and `logs/` next to its own `server.py`, so absolute paths are all the client needs:
