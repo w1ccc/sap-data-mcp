@@ -6,7 +6,7 @@ RFC 连接的完整成功路径见 [docs/GOLDEN_PATH.md](docs/GOLDEN_PATH.md)。
 
 ## 当前标准模块覆盖（2026-10-23 晚间）
 
-共 **90 个 Tool / 94 项固定函数白名单**。PP 新增 6 个并扩充生产订单明细；SD 保留原订单 `items` 状态语义，完整数据放 `details`，新增客户读取；经典 WM 4 个、FI 14 个、CO 12 个、QM 3 个工具。FI 本次补资产所选年末金额搜索/明细、总账期间余额；CO 补控制范围搜索/明细、内部订单搜索、订单组明细、利润中心及成本中心组搜索。MDG 主数据复用原有读取；请求元数据使用私有 OData。经典 WM 其余契约和各路线限制见根 README。
+共 **90 个 Tool / 94 项固定函数白名单**。PP 新增 6 个并扩充生产订单明细；SD 保留原订单 `items` 状态语义，完整数据放 `details`，新增客户读取；经典 WM 4 个、FI 14 个、CO 12 个、QM 3 个工具。FI 本次补资产所选年末金额搜索/明细、总账期间余额；CO 补控制范围搜索/明细、内部订单搜索、订单组明细、利润中心及成本中心组搜索。MDG 主数据复用原有读取；请求元数据使用私有 OData。经典 WM 其余契约和各路线限制见 [docs/COVERAGE.md](../../docs/COVERAGE.md)。
 
 2026-11-10：允许只读查表和只读查看源码，新增 5 个 Tool（`list_table_fields`、`read_table`、`summarize_table`、`read_program_source`、`run_report`）和 4 个函数（`DDIF_FIELDINFO_GET`、`RFC_READ_TABLE`、`RPY_PROGRAM_READ`、`INST_EXECUTE_REPORT`），现共 **95 个 Tool / 98 项固定函数白名单**。18 项本地回归通过。所有 Tool 仍然只读，修改类能力需要用户额外授权；`run_report` 只运行 `config/reviewed_reports.json` 中登记并且审核后源码未改动的只显示报表。
 
