@@ -1,6 +1,6 @@
 # Coverage and interface reference
 
-This reference used to be the top-level README. The overview, quick start and safety model now live in the [README](../README.md).
+This reference used to be the top-level README. The overview and quick start now live in the [README](../README.md) ([English](../README.en.md)).
 
 SAP Data MCP is organized first by deployment and then by integration route. Each provider has independent configuration, credentials, MCP registration and audit logs. The two HTTP providers share the standard business-domain implementations; neither loads PyRFC.
 
