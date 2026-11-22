@@ -1,6 +1,6 @@
 # Public Cloud API Provider
 
-标准 SAP 只读工具：154 个业务 Tool + 4 个基础 / 连接 / 审计 Tool，共 158 个。覆盖 MM/IM、PP、SD、EWM、FI、CO、已激活主数据和 QM；各模块及接口缺口以根 README 为准。与私有 OData 共用工具实现，独立运行、配置和记录日志。工具清单及使用方式见[项目说明](../../README.md)。不自动操作 Fiori 页面，也不使用 RFC/PyRFC。
+标准 SAP 只读工具：154 个业务 Tool + 4 个基础 / 连接 / 审计 Tool，共 158 个。覆盖 MM/IM、PP、SD、EWM、FI、CO、已激活主数据和 QM；各模块及接口缺口以 [docs/COVERAGE.md](../../docs/COVERAGE.md) 为准。与私有 OData 共用工具实现，独立运行、配置和记录日志。工具清单见 [docs/COVERAGE.md](../../docs/COVERAGE.md)，使用方式见[项目说明](../../README.md#3-步上手)。不自动操作 Fiori 页面，也不使用 RFC/PyRFC。
 
 在项目根目录执行：
 

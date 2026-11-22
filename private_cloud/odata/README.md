@@ -1,6 +1,6 @@
 # Private Cloud OData Provider
 
-标准 SAP 只读工具：155 个业务 Tool + 4 个基础 / 连接 / 审计 Tool，共 159 个，78 项服务映射。覆盖 MM/IM、PP、SD、EWM、FI、CO、已激活主数据和 QM；另提供私有 MDG 当前用户请求元数据查询。各模块及接口缺口以根 README 为准。工具清单、配置和分页约定见[项目说明](../../README.md)。不自动操作 Fiori 页面。
+标准 SAP 只读工具：155 个业务 Tool + 4 个基础 / 连接 / 审计 Tool，共 159 个，78 项服务映射。覆盖 MM/IM、PP、SD、EWM、FI、CO、已激活主数据和 QM；另提供私有 MDG 当前用户请求元数据查询。各模块、工具清单、分页约定及接口缺口以 [docs/COVERAGE.md](../../docs/COVERAGE.md) 为准，配置步骤见[项目说明](../../README.md#3-步上手)。不自动操作 Fiori 页面。
 
 `search_mdg_my_change_requests` 只 GET `MDG_MYCR_SRV/ChangeRequests`，复用现有客户端、分页和审计；返回 `data_state=change_request_metadata`。需 MDG 组件、激活服务及 `SAP_MDG_MY_REQ_APP` 相关授权；独立 MDG 按本分支原方式启动独立进程并显式配置。该服务不在公有云分支注册，也不宣称支持暂存、校验执行或审批。
 
