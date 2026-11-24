@@ -8,7 +8,7 @@
 
 Read-only MCP servers that let Claude and other AI assistants query SAP S/4HANA through RFC/BAPI, private-cloud OData or public-cloud released APIs
 
-[中文](README.md) · [Quick start](#quick-start) · [Full promo video](https://github.com/wangyichuan0609-tech/sap-data-mcp/releases/latest) · [MIT License](LICENSE)
+[中文](README.md) · [Quick start](#quick-start) · [Full promo video](https://github.com/w1ccc/sap-data-mcp/releases/latest) · [MIT License](LICENSE)
 
 </div>
 
@@ -21,7 +21,7 @@ Read-only MCP servers that let Claude and other AI assistants query SAP S/4HANA 
 You need Python 3.12 and an AI tool that supports MCP, such as Claude Desktop, Claude Code or Cursor. The example uses the public-cloud API server (Windows PowerShell):
 
 ```powershell
-git clone https://github.com/wangyichuan0609-tech/sap-data-mcp.git
+git clone https://github.com/w1ccc/sap-data-mcp.git
 cd sap-data-mcp
 py -3.12 -m venv .venv
 .\.venv\Scripts\python.exe -m pip install -r requirements.txt
