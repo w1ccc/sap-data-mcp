@@ -131,3 +131,7 @@ Independent open-source project, not affiliated with or endorsed by SAP SE. SAP,
 ## License
 
 [MIT](LICENSE)
+
+## Author
+
+[w1ccc](https://github.com/w1ccc)
